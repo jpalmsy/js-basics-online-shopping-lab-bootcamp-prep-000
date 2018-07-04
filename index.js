@@ -55,7 +55,7 @@ function generateCartDescription() {
     cartDescription += '${getCart()[0].itemName} at $${getCart()[0].itemPrice}'
   }
   if ( getCart().length >= 2) {
-    var middleCartDescription = ''
+    var middleCartItemsDescriptionDescription = ''
     for (var i=1; i<getCart().length -1; i++ ) {
       middleCartItemsDescription += ', $(getCart()[i].itemName} at $${getCart()[i].itemPrice}'
     }
