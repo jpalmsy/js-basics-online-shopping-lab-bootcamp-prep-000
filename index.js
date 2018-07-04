@@ -60,7 +60,7 @@ function generatecartdescription() {
     for (var i=1; i<getCart().length - 1; i++ ) {
       middleCartDescription += ', $(getCart()[i].itemName} at $${getCart()[i].itemPrice}'
     }
-    cartDescription += '${middleCartDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().legnth'
+    cartDescription += '${middleCartDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1.itemPrice'
     }
   }
 }
