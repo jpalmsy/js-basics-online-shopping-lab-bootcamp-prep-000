@@ -55,5 +55,10 @@ function generatecartdescription() {
   if ( getcart().length >= 1 ) {
     cartDescription += '${getCart()[0].itemName} at $${getCart()[0].itemPrice}'
   }
-  
+  if ( getCart().length >= 2) {
+    var middleCartDescription = ''
+    for (var i=1; i<getCart().length - 1; i++ ) {
+      middleCartDescription += ', $(getCart()[i].itemName} at $${getCart()[i].itemPrice}'
+    }
+  }
 }
