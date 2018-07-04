@@ -26,7 +26,7 @@ function total() {
 
 function removeFromCart(itemName) {
   var itemToRemove = searchCartForItemToRemove(itemName)
-  return itemtoRemove ? removeItemFromCart(itemToRemove): notifyUserThereIsNoItemToRemove()
+  return itemToRemove ? removeItemFromCart(itemToRemove): notifyUserThereIsNoItemToRemove()
 }
 
 function placeOrder(cardNumber) {
@@ -43,7 +43,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function cartitem(itemName) {
+function generateCartItem(itemName) {
   return {
     itemName:itemName,
     itemPrice:getRandomInt(1,100)
