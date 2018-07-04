@@ -73,4 +73,14 @@ function searchCartForItemToRemove(itemName) {
   return searchResult
 }
 
-function sumUpPrices
+function sumUpPrices() {
+  var sum = 0
+  for (var i=0; i<getCart().length; i++) {
+    sum = sum + getCart()[i].itemPrice
+  }
+  return sum
+  }
+  
+function notifyUserThereIsNoItemToRemove() {
+  return 'That item is not in your cart.'
+}
