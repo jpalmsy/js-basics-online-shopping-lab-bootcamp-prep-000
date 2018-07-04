@@ -39,3 +39,17 @@ function placeOrder(cardNumber) {
   }
   }
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function caritem(itemName) {
+  return {
+    itemName:itemName,
+    itemPrice:getRandomInt(1,100)
+  }
+}
+
+function generatecartdescription() {
+  var cart Description = 'In your cart, you have'
+}
