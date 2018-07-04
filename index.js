@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- var itemname = cartitem(item)
+ var item = cartitem(item)
  getCart().push(item)
  return '{$item.itemName} has been added to your cart.'
 }
