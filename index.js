@@ -25,7 +25,7 @@ function total() {
 }
 
 function removeFromCart(itemName) {
-  var itemToRemove = searcgCartForItemToRemove(itemName)
+  var itemToRemove = searchCartForItemToRemove(itemName)
   return itemtoRemove ? removeItemFromCart(itemToRemove): notifyUserThereIsNoItemToRemove()
 }
 
