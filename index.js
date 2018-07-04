@@ -51,5 +51,8 @@ function caritem(itemName) {
 }
 
 function generatecartdescription() {
-  var cart Description = 'In your cart, you have'
+  var cartDescription = 'In your cart, you have'
+  if ( getcart().length >= 1 ) {
+    cartDescription += '${getCart()[0].itemName} at $${getCart()[0].itemPrice'
+  }
 }
