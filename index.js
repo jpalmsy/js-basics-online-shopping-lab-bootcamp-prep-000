@@ -52,7 +52,7 @@ function generateCartItem(itemName) {
 
 function generateCartDescription() {
   var cartDescription = 'In your cart, you have '
-  if ( getcart().length >= 1 ) {
+  if ( getCart().length >= 1 ) {
     cartDescription += '${getCart()[0].itemName} at $${getCart()[0].itemPrice}'
   }
   if ( getCart().length >= 2) {
