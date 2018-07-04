@@ -60,5 +60,7 @@ function generatecartdescription() {
     for (var i=1; i<getCart().length - 1; i++ ) {
       middleCartDescription += ', $(getCart()[i].itemName} at $${getCart()[i].itemPrice}'
     }
+    
+    }
   }
 }
