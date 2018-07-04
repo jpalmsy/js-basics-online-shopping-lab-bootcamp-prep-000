@@ -52,18 +52,18 @@ function generateCartItem(itemName) {
 function generateCartDescription() {
   var cartDescription = 'In your cart, you have '
   if ( getCart().length >= 1 ) {
-    cartDescription += '${getCart()[0].itemName} at $${getCart()[0].itemPrice}'
+    cartDescription += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
   }
   if ( getCart().length >= 2 ) {
-    var middleCartItemsDescriptionDescription = ''
-    for (var i=1; i<getCart().length -1; i++ ) {
-      middleCartItemsDescription += ', $(getCart()[i].itemName} at $${getCart()[i].itemPrice}'
+    var middleCartItemsDescription = ''
+    for (var i=1; i<getCart().length -1; i++) {
+      middleCartItemsDescription += `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
     }
-    cartDescription += '${middleCartItemsDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}'
+    cartDescription += `${middleCartItemsDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`
   }
-  return '${cartDescription}.'
-}
 
+  return `${cartDescription}.`
+}
 function searchCartForItemToRemove(itemName) {
   var searchResult
   for (var i=0; i<getCart().length; i++) {
