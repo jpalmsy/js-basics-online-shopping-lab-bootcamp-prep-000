@@ -16,7 +16,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  return getCart.length === 0 ? "Your shopping cart is empty": generatecartdescription()
+  return getCart.length === 0 ? "Your shopping cart is empty.": generatecartdescription()
 }
 
 function total() {
