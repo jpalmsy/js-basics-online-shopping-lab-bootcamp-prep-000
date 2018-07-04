@@ -66,12 +66,9 @@ function generatecartdescription() {
 }
 
 function searchCartForItemToRemove(itemName) {
-  var searcgResult
+  var searchResult
   for (var i=0; i<getCart().length; i++) {
     if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
   }
   return searchResult
-}
-
-  }
 }
