@@ -16,7 +16,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  return getCart.length === 0 ? "Your shopping cart is empty.": generatecartdescription()
+  return getCart.length === 0 ? "Your shopping cart is empty." : generateCartDescription()
 }
 
 function total() {
@@ -50,7 +50,7 @@ function generateCartItem(itemName) {
   }
 }
 
-function generatecartdescription() {
+function generateCartDescription() {
   var cartDescription = 'In your cart, you have '
   if ( getcart().length >= 1 ) {
     cartDescription += '${getCart()[0].itemName} at $${getCart()[0].itemPrice}'
