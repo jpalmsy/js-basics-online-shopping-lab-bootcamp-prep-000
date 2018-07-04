@@ -31,14 +31,13 @@ function removeFromCart(itemName) {
 
 function placeOrder(cardNumber) {
   if (arguments[0] == undefined) {
-    return "Sorry, we dont have a credit card on file for you." 
+    return "Sorry, we don't have a credit card on file for you."
   } else {
     var sumToCharge = total()
-    setCart ([])
-    return 'Your total cost is $${sumToCharge}, which will be charged to the card ${cardNumber}.'
+    setCart([])
+    return `Your total cost is $${sumToCharge}, which will be charged to the card ${cardNumber}.`
   }
-  }
-
+}
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
